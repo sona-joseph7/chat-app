@@ -3,7 +3,7 @@ import {useSelector} from "react-redux"
 import {io} from "socket.io-client"
 import {useNavigate} from "react-router-dom"
 
-const socket = io("https://chat-app-server-2-x9ij.onrender.com")//connect websocket server
+const socket = io("https://chat-app-server-5.onrender.com")//connect websocket server
 
 const Chat = ()=>{
   const username = useSelector((state)=>state.user.username)
