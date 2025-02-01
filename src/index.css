@@ -1,0 +1,174 @@
+.login-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(https://w0.peakpx.com/wallpaper/699/218/HD-wallpaper-kitty-s-night-chat-session-pretty-wonderful-stunning-marvellous-adorable-sweet-nice-outstanding-evening-super-kitty-laptop-cat-cute-awesome-computer-great-cats-beautiful-bed.jpg);
+  background-size: cover;
+}
+.chat-container{
+  display: flex;
+  height: 100vh;
+  flex-wrap: nowrap;
+}
+#login-btn{
+  background-color: aqua;
+}
+.chat-left{
+  flex: 3;
+  padding: 20px;
+  border-radius: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* background-color: #f4f4f4; */
+  background-image: url(https://c0.wallpaperflare.com/preview/1021/163/815/technology-networking-abstract-business.jpg);
+  overflow-y: auto;
+}
+
+.messages{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  height: calc(100vh-160px);
+}
+.message{
+  max-width: 60%;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  word-wrap: break-word;
+}
+.message strong{
+  color: #007bff;
+}
+.message.sent{
+  align-self: flex-end;
+  background-color: #d4edda;
+  text-align: right;
+  border-top-right-radius: 0;
+}
+.message.received{
+  align-self: flex-start;
+  background-color: #f8d7da;
+  text-align: left;
+  border-top-right-radius: 0;
+}
+.message-input{
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  width: 70%;
+  margin-left: 10%;
+
+}
+.message-input input{
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+.message-input button{
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.message-input button:hover{
+  background-color: #0056b3;
+}
+.chat-right{
+  flex: 1; /* Takes less space */
+    padding: 20px;
+    background-color: #fafafa;
+    overflow-y: auto;
+  }
+  
+  .online-users {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .online-users h3 {
+    margin-bottom: 10px;
+  }
+  
+  .online-users ul {
+    list-style-type: none;
+  }
+  
+  .online-users li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .online-users li:last-child {
+    border-bottom: none;
+  }
+  
+  .message:hover {
+    background-color: #f0f8ff;
+    cursor: pointer;
+  }
+  .message-input button {
+    background-color: #28a745;
+  }
+  
+  .message-input button:hover {
+    background-color: #218838;
+  }
+
+
+
+
+  @media (max-width: 768px) {
+    .chat-container {
+      flex-direction: column;
+    }
+  
+    .chat-left {
+      flex: 1;
+      border-right: none;
+      padding: 10px;
+    }
+  
+    .chat-right {
+      display: none;
+    }
+  
+    .messages {
+      height: calc(100vh - 160px); 
+    }
+  
+    .message-input {
+      margin-top: 10px;
+    }
+  
+    .message-input input {
+      font-size: 14px;
+    }
+  
+    .message-input button {
+      padding: 8px 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .message-input input {
+      font-size: 14px;
+    }
+  
+    .message-input button {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  }
+      
